@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            video {
+            cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <video id="Chicken Sakurako" width="800" height="600" autoplay muted loop>
+            <source src="Chicken Sakurako.mp4" type="video/mp4">
+        </video>
+        <script>
+            let firstClick = true;
+            function ChickenSakurako() {
+                var video = document.getElementById('Chicken Sakurako');
+                if (firstClick) {
+                    video.muted = !video.muted;
+                    video.currentTime = 0;
+                    video.play();
+                    firstClick = false;
+                    video.style.cursor = 'default';
+                } else {
+                    window.location.href = 'https://www.youtube.com/watch?v=9bZkp7q19f0';
+                }
+            }   
+            document.getElementById('Chicken Sakurako').addEventListener('click', ChickenSakurako);
+        </script>
+    </body>
+</html>
