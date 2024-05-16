@@ -1,10 +1,5 @@
-@font-face{
-	font-family: myFont;
-	src:url(/font/animeace2_reg.ttf)
-}
-
 body {
-	font-family: myFont,  Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -14,7 +9,7 @@ body {
 	background-color: #000000; /* Dunkelgrauer Hintergrund */
 	color: #fff; /* Weiße Schriftfarbe */
 }
-.picture-container{
+#picture-container{
 	cursor: pointer;
 }
 .container {
