@@ -45,24 +45,17 @@
                     firstClick = false;
                     video.style.cursor = 'default';
                 } else {
-                    zufallsAktion(); // Hier wird die Zufallsfunktion aufgerufen
+                    zufallsAktion(); 
                 }
             }
-    
             function zufallsAktion() {
-                // Generiere eine Zufallszahl zwischen 1 und 100
                 var zufallszahl = Math.floor(Math.random() * 100) + 1;
-
-                // Überprüfe, ob die Zufallszahl kleiner oder gleich der Prozentwahrscheinlichkeit ist
-                if (zufallszahl <= 50) { // Hier wird die Wahrscheinlichkeit direkt festgelegt (10%)
-                    window.location.href = 'https://www.youtube.com/watch?v=ca5KKeFP8v0';
-                    // Führe hier deine Aktion aus, wenn die Bedingung erfüllt ist
+                if (zufallszahl <= 50) {
+                    window.location.href = 'https://www.youtube.com/watch?v=vES5N7ouo8A';
                 } else {
                     window.location.href = 'https://www.youtube.com/watch?v=9bZkp7q19f0';
-                    // Führe hier eine alternative Aktion aus, wenn die Bedingung nicht erfüllt ist
                 }
-            }
-    
+            }   
             document.getElementById('Chicken Sakurako').addEventListener('click', ChickenSakurako);
         </script>
         <a id="link" href="https://github.com/nxtkallax/nxtkallax.de/" target="_blank">by nxtkallax</a>
