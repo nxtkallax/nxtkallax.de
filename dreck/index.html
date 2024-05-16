@@ -15,7 +15,7 @@
 	</div>
 
 	<div class="picture-container">
-		<img id="randomImage" src="/dreck/bilder/kippenfisch.jpg">
+		<img id="randomImage" src="/dreck/bilder/kippenfisch.jpg" onclick="playSound()">
 	</div>
 
 	<div class="links">
@@ -26,7 +26,7 @@
 		</ul>
 	</div>
 </div>
-
+<audio id="sound" src="/dreck/bilder/yeehaw.ogg" type="audio/ogg"></audio>
 <script>
     // Array mit Bild-Dateipfaden
     var bilder = [
@@ -35,7 +35,7 @@
         "/dreck/bilder/chiyo.jpg",
 		"/dreck/bilder/fish.jpg",
 		"/dreck/bilder/hot.jpg",
-		"/dreck/bilder/logo.jpg",
+		"/dreck/bilder/logo.png",
 		"/dreck/bilder/meme.jpg",
 		"/dreck/bilder/osaker.jpg",
 		"/dreck/bilder/reimu.jpg",
@@ -47,6 +47,11 @@
 
     // Bild-Element auswählen und die Quelle ändern
     document.getElementById("randomImage").src = bilder[zufallsIndex];
+
+	function playSound() {
+        var audio = document.getElementById("sound");
+        audio.play();
+    }
 </script>
 
 </body>
