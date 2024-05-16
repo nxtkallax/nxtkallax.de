@@ -18,6 +18,10 @@ body {
 
 .picture-container {
 	margin-bottom: 20px;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	display: flex;
 }
 
 .logo{
