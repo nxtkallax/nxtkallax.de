@@ -9,9 +9,6 @@
 	background-color: #000000; /* Dunkelgrauer Hintergrund */
 	color: #fff; /* Weiße Schriftfarbe */
 }
-#picture-container{
-	cursor: pointer;
-}
 .container {
 	display: flex;
 	flex-direction: column;
