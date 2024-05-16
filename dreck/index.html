@@ -56,11 +56,14 @@
     document.getElementById("randomImage").src = bilder[zufallsIndex];
 
 	function playSound() {
-        
-		if (bilder === "/dreck/bilder/toshinokyouko.png") {
-			var audio = document.getElementById("toshinokyouko");
-        	audio.play();
 
+		var image = document.getElementById("randomImage");
+        var currentSrc = image.src;
+
+        if (currentSrc.includes("toshinokyouko.png")) {
+            var audio = document.getElementById("toshinokyouko");
+            audio.play();
+        
 		} else {
 			var audio = document.getElementById("yeehaw");
         	audio.play();
