@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">    
-    <link rel="stylesheet" href="style.css">
-    <style>
-        #bottomLink {
-        font-family: "Comic Sans MS";
-        font-weight: bold;
-        position: fixed;
-        bottom: 10px;
-        left: 10px;
-        text-decoration: none;
-        color: #d3cece;
-        }
-    </style>
-</head>
-<body>  
-    <video id="Chicken Sakurako" width="800" height="600" autoplay muted loop>
-        <source src="Chicken Sakurako.mp4" type="video/mp4">
-    </video>
-    <script>
-        let firstClick = true;
-        function ChickenSakurako() {
-            var video = document.getElementById('Chicken Sakurako');
-            if (firstClick) {
-                video.muted = !video.muted;
-                video.currentTime = 0;
-                video.play();
-                firstClick = false;
-                video.style.cursor = 'default';
-            } else {
-                window.location.href = 'https://www.youtube.com/watch?v=9bZkp7q19f0';
+    <head>
+        <meta charset="UTF-8">    
+        <style>
+            body{
+                height: 100vh;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-        }   
-        document.getElementById('Chicken Sakurako').addEventListener('click', ChickenSakurako);
-    </script>   
-    <a id="bottomLink" href="https://github.com/nxtkallax" target="_blank">nxtkallaxによる作成</a>  
-</body>
+            
+            video {
+                cursor: pointer;
+            }
+            #link {
+                font-family: "Comic Sans MS";
+                font-weight: bold;
+                position: fixed;
+                bottom: 5px;
+                left: 10px;
+                text-decoration: none;
+                color: #d3cece;
+            }
+            #Chicken-Sakurako {
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Chicken-Sakurako">
+            <video id="Chicken Sakurako" width="1000" height="562" autoplay muted loop>
+                <source src="Chicken Sakurako.mp4" type="video/mp4">
+            </video>
+        </div>
+        <script>
+            let firstClick = true;
+            function ChickenSakurako() {
+                var video = document.getElementById('Chicken Sakurako');
+                if (firstClick) {
+                    video.muted = !video.muted;
+                    video.currentTime = 0;
+                    video.play();
+                    firstClick = false;
+                    video.style.cursor = 'default';
+                } else {
+                    window.location.href = 'https://www.youtube.com/watch?v=9bZkp7q19f0';
+                }
+            }
+            document.getElementById('Chicken Sakurako').addEventListener('click', ChickenSakurako);
+        </script>
+        <a id="link" href="https://github.com/nxtkallax" target="_blank">by nxtkallax</a>
+    </body>
 </html>
