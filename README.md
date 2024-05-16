@@ -1,2 +1,2 @@
 # nxtkallax.de
-eine random website die ich mache und da komische dinge sind.
+irgendne websiet, wo ik maak un da kumisch sachen sünd.
