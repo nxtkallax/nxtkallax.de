@@ -1,2 +1,2 @@
 # nxtkallax.de
-irgendne websiet, wo ik maak un da kumisch sachen sünd.
+en websiet de ik maak wo komische saken sünd
