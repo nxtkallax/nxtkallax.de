@@ -1,75 +1,55 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Läuft ihr Kühlschrank gerade?</title>
-	<link rel="stylesheet" href="styles.css">
-	<style>
-		#randomImage{
-			cursor: pointer;
-		}
-	</style>
-</head>
-<body>
-
-<div class="container">
-	<div class="logo">
-		<h1>jooooooooo</h1>
-		<!-- <img src="/bilder/logo.png"> -->
-	</div>
-
-	<div class="picture-container">
-		<img id="randomImage" onclick="playSound()">
-	</div>
-
-	<div class="links">
-		<h3>Andere Sachen</h3>
-		<ul>
-			<h4><a class="links2" href="/dreck/joa">joa</a></h4>
-			<h4><a class="links2" href="zufallsgenerator.html">Zufallsgenerator</a></h4>
-		</ul>
-	</div>
-</div>
-<audio id="yeehaw" src="/dreck/bilder/yeehaw.ogg" type="audio/ogg"></audio>
-<audio id="toshinokyouko" src="/dreck/bilder/toshinokyouko.ogg" type="audio/ogg"></audio>
-<script>
-    // Array mit Bild-Dateipfaden
-    var bilder = [
-        "/dreck/bilder/kippenfisch.jpg",
-        "/dreck/bilder/bocchi.jpg",
-        "/dreck/bilder/chiyo.jpg",
-		"/dreck/bilder/fish.jpg",
-		"/dreck/bilder/hot.jpg",
-		"/dreck/bilder/logo.png",
-		"/dreck/bilder/meme.jpg",
-		"/dreck/bilder/osaker.jpg",
-		"/dreck/bilder/reimu.jpg",
-		"/dreck/bilder/toshinokyouko.png",
-        // Weitere Bildpfade hier hinzufügen
-    ];
-
-    // Zufällige Zahl generieren, um ein Bild aus dem Array zu wählen
-    var zufallsIndex = Math.floor(Math.random() * bilder.length);
-
-    // Bild-Element auswählen und die Quelle ändern
-    document.getElementById("randomImage").src = bilder[zufallsIndex];
-
-	function playSound() {
-
-		var image = document.getElementById("randomImage");
-        var currentSrc = image.src;
-
-        if (currentSrc.includes("toshinokyouko.png")) {
-            var audio = document.getElementById("toshinokyouko");
-            audio.play();
-        
-		} else {
-			var audio = document.getElementById("yeehaw");
-        	audio.play();
-		}
-    }
-</script>
-
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Läuft ihr Kühlschrank gerade?</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo">
+				<h1>jooooooooo</h1>
+			</div>
+			<div class="picture-container">
+				<img id="randomImage" onclick="playSound()">
+			</div>
+			<div class="links">
+				<h3>Andere Sachen</h3>
+				<ul>
+					<h4><a class="links2" href="/dreck/joa">joa</a></h4>
+					<h4><a class="links2" href="zufallsgenerator.html">Zufallsgenerator</a></h4>
+				</ul>
+			</div>
+		</div>
+		<audio id="yeehaw" src="/dreck/bilder/yeehaw.ogg" type="audio/ogg"></audio>
+		<audio id="toshinokyouko" src="/dreck/bilder/toshinokyouko.ogg" type="audio/ogg"></audio>
+		<script>
+			var bilder = [
+				"/dreck/bilder/kippenfisch.jpg",
+				"/dreck/bilder/bocchi.jpg",
+				"/dreck/bilder/chiyo.jpg",
+				"/dreck/bilder/fish.jpg",
+				"/dreck/bilder/hot.jpg",
+				"/dreck/bilder/logo.png",
+				"/dreck/bilder/meme.jpg",
+				"/dreck/bilder/osaker.jpg",
+				"/dreck/bilder/reimu.jpg",
+				"/dreck/bilder/toshinokyouko.png",
+			];
+			var zufallsIndex = Math.floor(Math.random() * bilder.length);
+			document.getElementById("randomImage").src = bilder[zufallsIndex];
+			function playSound() {
+				var image = document.getElementById("randomImage");
+				var currentSrc = image.src;
+				if (currentSrc.includes("toshinokyouko.png")) {
+					var audio = document.getElementById("toshinokyouko");
+					audio.play();
+				} else {
+					var audio = document.getElementById("yeehaw");
+					audio.play();
+				}
+			}
+		</script>
+	</body>
 </html>
