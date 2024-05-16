@@ -25,7 +25,7 @@
                 bottom: 5px;
                 left: 10px;
                 text-decoration: none;
-                color: #d3cece  ;
+                color: #d3cece;
             }
             #discord {
                 font-family: "Comic Sans MS";
@@ -63,10 +63,12 @@
             }
             function zufallsAktion() {
                 var zufallszahl = Math.floor(Math.random() * 100) + 1;
-                if (zufallszahl <= 50) {
+                if (zufallszahl <= 33) {
                     window.location.href = 'https://www.youtube.com/watch?v=vES5N7ouo8A';
-                } else {
+                } else if(zufallszahl >=66) {
                     window.location.href = 'https://www.youtube.com/watch?v=9bZkp7q19f0';
+                } else {
+                    window.location.href = 'https://www.youtube.com/watch?v=gT2wY0DjYGo'
                 }
             }   
             document.getElementById('Chicken Sakurako').addEventListener('click', ChickenSakurako);
