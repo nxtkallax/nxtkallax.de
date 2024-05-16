@@ -31,7 +31,8 @@
 		</ul>
 	</div>
 </div>
-<audio id="sound" src="/dreck/bilder/yeehaw.ogg" type="audio/ogg"></audio>
+<audio id="yeehaw" src="/dreck/bilder/yeehaw.ogg" type="audio/ogg"></audio>
+<audio id="toshinokyouko" src="/dreck/bilder/toshinokyouko.ogg" type="audio/ogg"></audio>
 <script>
     // Array mit Bild-Dateipfaden
     var bilder = [
@@ -55,8 +56,15 @@
     document.getElementById("randomImage").src = bilder[zufallsIndex];
 
 	function playSound() {
-        var audio = document.getElementById("sound");
-        audio.play();
+        
+		if (bilder === "/dreck/bilder/toshinokyouko.png") {
+			var audio = document.getElementById("toshinokyouko");
+        	audio.play();
+
+		} else {
+			var audio = document.getElementById("yeehaw");
+        	audio.play();
+		}
     }
 </script>
 
