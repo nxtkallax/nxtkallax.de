@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=de>
+<html lang="de">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,18 +15,39 @@
 	</div>
 
 	<div class="picture-container">
-		<img src="/dreck/bilder/kippenfisch.jpg">
+		<img id="randomImage" src="/dreck/bilder/kippenfisch.jpg">
 	</div>
 
 	<div class="links">
 		<h3>Andere Sachen</h3>
 		<ul>
-			<h4><a class="links2" href="/dreck/joa">joa</h4>
-			<h4><a class="links2" href="zufallsgenerator.html">Zufallsgenerator</h4>
+			<h4><a class="links2" href="/dreck/joa">joa</a></h4>
+			<h4><a class="links2" href="zufallsgenerator.html">Zufallsgenerator</a></h4>
 		</ul>
 	</div>
 </div>
 
+<script>
+    // Array mit Bild-Dateipfaden
+    var bilder = [
+        "/dreck/bilder/kippenfisch.jpg",
+        "/dreck/bilder/bocchi.jpg",
+        "/dreck/bilder/chiyo.jpg",
+		"/dreck/bilder/fish.jpg",
+		"/dreck/bilder/hot.jpg",
+		"/dreck/bilder/logo.jpg",
+		"/dreck/bilder/meme.jpg",
+		"/dreck/bilder/osaker.jpg",
+		"/dreck/bilder/reimu.jpg",
+        // Weitere Bildpfade hier hinzufügen
+    ];
+
+    // Zufällige Zahl generieren, um ein Bild aus dem Array zu wählen
+    var zufallsIndex = Math.floor(Math.random() * bilder.length);
+
+    // Bild-Element auswählen und die Quelle ändern
+    document.getElementById("randomImage").src = bilder[zufallsIndex];
+</script>
+
 </body>
 </html>
-
