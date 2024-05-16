@@ -1,40 +1,44 @@
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	background-color: #000000; /* Dunkelgrauer Hintergrund */
-	color: #fff; /* Weiße Schriftfarbe */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Dunkelgrauer Hintergrund */
+    color: #fff; /* Weiße Schriftfarbe */
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .picture-container {
-	margin-bottom: 20px;
-	position: fixed;
-	align-items: center;
-	justify-content: center;
-	display: flex;
+    margin-bottom: 20px;
+    position: relative; /* Von fixed zu relative geändert */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-height: 80vh; /* Maximale Höhe festlegen, damit der Container nicht aus dem Sichtbereich verschwindet */
+    overflow: hidden; /* Überschüssigen Inhalt ausblenden */
 }
 
-.logo{
-	position: absolute;
-	top: 0;
-	object-fit: cover;
-	z-index: 1;
+.logo {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    z-index: 1;
 }
 
-.links2{
-	color: #fff
+.links2 {
+    color: #fff;
 }
 
-#randomImage{
-	cursor: pointer;
+#randomImage {
+    cursor: pointer;
+    max-height: 100%; /* Sicherstellen, dass das Bild innerhalb des Containers bleibt */
+    max-width: 100%; /* Sicherstellen, dass das Bild innerhalb des Containers bleibt */
 }
