@@ -1,14 +1,14 @@
 var bilder = [
-    "/dreck/bilder/kippenfisch.jpg",
-    "/dreck/bilder/bocchi.jpg",
-    "/dreck/bilder/chiyo.jpg",
-    "/dreck/bilder/fish.jpg",
-    "/dreck/bilder/hot.jpg",
-    "/dreck/bilder/logo.png",
-    "/dreck/bilder/meme.jpg",
-    "/dreck/bilder/osaker.jpg",
-    "/dreck/bilder/reimu.jpg",
-    "/dreck/bilder/toshinokyouko.png",
+    "/dreck/img/kippenfisch.jpg",
+    "/dreck/img/bocchi.jpg",
+    "/dreck/img/chiyo.jpg",
+    "/dreck/img/fish.jpg",
+    "/dreck/img/hot.jpg",
+    "/dreck/img/logo.png",
+    "/dreck/img/meme.jpg",
+    "/dreck/img/osaker.jpg",
+    "/dreck/img/reimu.jpg",
+    "/dreck/img/toshinokyouko.png",
 ];
 var zufallsIndex = Math.floor(Math.random() * bilder.length);
 document.getElementById("randomImage").src = bilder[zufallsIndex];
