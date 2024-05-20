@@ -11,7 +11,7 @@ let firstClick = true;
                     zufallsAktion(); 
                 }
             }
-            function zufallsAktion(min = 1, max = 5) {
+            function zufallsAktion(min = 1, max = 11) {
                 var zufallszahl = Math.floor(Math.random() * (max - min + 1)) + min;
                 if (zufallszahl === 1) {
                     window.location.href = 'https://www.youtube.com/watch?v=vES5N7ouo8A';
@@ -23,6 +23,18 @@ let firstClick = true;
                     window.location.href = 'https://www.youtube.com/watch?v=cbB3iGRHtqA';
                 } else if (zufallszahl === 5) {
                     window.location.href = 'https://www.youtube.com/watch?v=1o69aqubNcMo';
+                } else if (zufallszahl === 6) {
+                    window.location.href = 'https://www.youtube.com/watch?v=9B3zUiG0qEo';
+                } else if (zufallszahl === 7) {
+                    window.location.href = 'https://www.youtube.com/watch?v=iuJDhFRDx9M ';
+                } else if (zufallszahl === 8) {
+                    window.location.href = 'https://www.youtube.com/watch?v=k85mRPqvMbE';
+                } else if (zufallszahl === 9) {
+                    window.location.href = 'https://www.youtube.com/watch?v=NfuiB52K7X8';
+                } else if (zufallszahl === 10) {
+                    window.location.href = 'https://www.youtube.com/watch?v=rzXWaP7Qf4U';
+                } else if (zufallszahl === 11) {
+                    window.location.href = 'https://www.youtube.com/watch?v=STzK1XrpoBs';
                 } else {
                     console.log("na hömma, was hast du jetzt wieder angestellt?");
                 }
