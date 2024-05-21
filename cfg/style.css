@@ -8,22 +8,30 @@ body{
 video {
     cursor: pointer;
 }
-.links{
+#github {
     font-family: "Comic Sans MS";
     font-weight: bold;
     position: fixed;
     text-decoration: none;
     color: #d3cece;
-}
-#github {
     bottom: 5px;
     left: 10px;
 }
 #dreck {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    position: fixed;
+    text-decoration: none;
+    color: #d3cece;
     bottom: 5px;
     right: 10px;
 }
 #clicker {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    position: fixed;
+    text-decoration: none;
+    color: #d3cece;
     top: 5px;
     left: 10px;
 }
