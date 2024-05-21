@@ -8,23 +8,25 @@ body{
 video {
     cursor: pointer;
 }
-#link {
+.links{
     font-family: "Comic Sans MS";
     font-weight: bold;
     position: fixed;
-    bottom: 5px;
-    left: 10px;
     text-decoration: none;
     color: #d3cece;
 }
+#link {
+
+    bottom: 5px;
+    left: 10px;
+}
 #jooooooooo {
-    font-family: "Comic Sans MS";
-    font-weight: bold;
-    position: fixed;
     bottom: 5px;
     right: 10px;
-    text-decoration: none;
-    color: #d3cece;
+}
+#clickerlink {
+    top: 5px;
+    left: 10px;
 }
 #Chicken-Sakurako {
     position: relative;
