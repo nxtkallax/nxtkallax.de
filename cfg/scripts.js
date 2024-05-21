@@ -11,7 +11,7 @@ let firstClick = true;
                     zufallsAktion(); 
                 }
             }
-            function zufallsAktion(min = 1, max = 11) {
+            function zufallsAktion(min = 1, max = 12) {
                 var zufallszahl = Math.floor(Math.random() * (max - min + 1)) + min;
                 if (zufallszahl === 1) {
                     window.location.href = 'https://www.youtube.com/watch?v=vES5N7ouo8A';
@@ -35,6 +35,8 @@ let firstClick = true;
                     window.location.href = 'https://www.youtube.com/watch?v=rzXWaP7Qf4U';
                 } else if (zufallszahl === 11) {
                     window.location.href = 'https://www.youtube.com/watch?v=STzK1XrpoBs';
+                } else if (zufallszahl === 12) {
+                    window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
                 } else {
                     console.log("na hömma, was hast du jetzt wieder angestellt?");
                 }

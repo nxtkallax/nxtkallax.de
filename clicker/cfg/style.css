@@ -14,8 +14,8 @@ body {
 }
 
 .circle-button {
-    width: 100px; /* Breite des Kreises */
-    height: 100px; /* Höhe des Kreises */
+    width: 400px; /* Breite des Kreises */
+    height: 400px; /* Höhe des Kreises */
     border-radius: 50%; /* Macht den Button rund */
     border: none; /* Entfernt den Standardrahmen */
     background-color: #ffae00; /* Hintergrundfarbe des Buttons */
