@@ -1,8 +1,25 @@
-#clickbutton {
+.clickbutton {
     height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.circle-button {
+    width: 100px; /* Breite des Kreises */
+    height: 100px; /* Höhe des Kreises */
+    border-radius: 50%; /* Macht den Button rund */
+    border: none; /* Entfernt den Standardrahmen */
+    background-color: #ffae00; /* Hintergrundfarbe des Buttons */
+    color: none; /* Textfarbe */
+    font-size: 0px; /* Schriftgröße des Textes */
+    cursor: pointer; /* Ändert den Cursor bei Hover */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-button:hover {
+    background-color: #ff9900; /* Ändert die Hintergrundfarbe beim Hover */
 }
