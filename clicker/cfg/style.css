@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Standard-Schriftart für den Rest der Seite */
+}
+
 .clickbutton {
     height: 100vh;
     margin: 0;
@@ -22,4 +28,14 @@
 }
 .circle-button:hover {
     background-color: #ff9900; /* Ändert die Hintergrundfarbe beim Hover */
+}
+
+.click-counter {
+    position: absolute;
+    top: 20px; /* Abstand vom oberen Rand */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier New', Courier, monospace; /* Spezielle Schriftart für den Click Counter */
+    font-size: 24px; /* Schriftgröße des Click Counters */
+    color: #333; /* Textfarbe */
 }
