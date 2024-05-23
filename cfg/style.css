@@ -1,3 +1,31 @@
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+    } 
+    #github {
+        color: #444444;
+    }
+    #dreck {
+        color: #444444;
+    }
+    #clicker {
+        color: #444444;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+    }
+    #github {
+        color: #444444;
+    }
+    #dreck {
+        color: #444444;
+    }
+    #clicker {
+        color: #444444;
+    }
+}
 body{
     height: 100vh;
     margin: 0;
