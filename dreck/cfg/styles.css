@@ -6,8 +6,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000000; /* Dunkelgrauer Hintergrund */
-    color: #fff; /* Weiße Schriftfarbe */
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .container {
@@ -18,27 +18,16 @@ body {
 
 .picture-container {
     margin-bottom: 20px;
-    position: relative; /* Von fixed zu relative geändert */
+    position: relative;
     align-items: center;
     justify-content: center;
     display: flex;
-    max-height: 80vh; /* Maximale Höhe festlegen, damit der Container nicht aus dem Sichtbereich verschwindet */
-    overflow: hidden; /* Überschüssigen Inhalt ausblenden */
-}
-
-.logo {
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    z-index: 1;
-}
-
-.links2 {
-    color: #fff;
+    max-height: 80vh;
+    overflow: hidden;
 }
 
 #randomImage {
     cursor: pointer;
-    max-height: 100%; /* Sicherstellen, dass das Bild innerhalb des Containers bleibt */
-    max-width: 100%; /* Sicherstellen, dass das Bild innerhalb des Containers bleibt */
+    max-height: 100%;
+    max-width: 100%;
 }
