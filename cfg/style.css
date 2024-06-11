@@ -19,5 +19,12 @@ body{
     font-family: nunitobold;
 }
 .joe{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.joejoke{
     font-family: nunitobold;
 }
