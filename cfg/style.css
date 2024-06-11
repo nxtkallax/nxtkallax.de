@@ -1,50 +1,20 @@
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: #ffffff;
-    } 
+@font-face {
+    font-family: nunitoblack;
+    src: url(/cfg/font/Nunito-Black.ttf);
 }
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #000000;
-    }
+@font-face {
+    font-family: nunitobold;
+    src: url(/cfg/font/Nunito-Bold.ttf);
 }
+@font-face {
+    font-family: nunitomedium;
+    src: url(/cfg/font/Nunito-Medium.ttf);
+}
+@font-face {
+    font-family: nunitosemibold;
+    src: url(/cfg/font/Nunito-SemiBold.ttf);
+}
+
 body{
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-video {
-    cursor: pointer;
-}
-#github {
-    font-family: "Comic Sans MS";
-    font-weight: bold;
-    position: fixed;
-    text-decoration: none;
-    color: #d3cece;
-    bottom: 5px;
-    left: 10px;
-}
-#dreck {
-    font-family: "Comic Sans MS";
-    font-weight: bold;
-    position: fixed;
-    text-decoration: none;
-    color: #d3cece;
-    bottom: 5px;
-    right: 10px;
-}
-#clicker {
-    font-family: "Comic Sans MS";
-    font-weight: bold;
-    position: fixed;
-    text-decoration: none;
-    color: #d3cece;
-    top: 5px;
-    left: 10px;
-}
-#Chicken-Sakurako {
-    position: relative;
+    font-family: nunitobold;
 }
