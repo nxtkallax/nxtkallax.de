@@ -1,23 +1,11 @@
 
-@font-face {
-    font-family: nunitoblack;
-    src: url(/cfg/font/Nunito-Black.ttf);
-}
-@font-face {
-    font-family: nunitobold;
-    src: url(/cfg/font/Nunito-Bold.ttf);
-}
-@font-face {
-    font-family: nunitomedium;
-    src: url(/cfg/font/Nunito-Medium.ttf);
-}
-@font-face {
-    font-family: nunitosemibold;
-    src: url(/cfg/font/Nunito-SemiBold.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
 body{
-    font-family: nunitobold;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     margin: 0;
     padding: 0;
     display: flex;
@@ -34,5 +22,8 @@ body{
 }  
 
 .joejoke{
-    font-family: nunitosemibold;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
