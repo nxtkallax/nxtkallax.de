@@ -1,7 +1,6 @@
 function displayRandomText() {
     const randomIndex = Math.floor(Math.random() * texts.length);
     const selectedText = texts[randomIndex];
-
     document.getElementById('title').innerText = selectedText.title;
     const paragraphsContainer = document.getElementById('paragraphs');
     paragraphsContainer.innerHTML = '';2
@@ -11,5 +10,4 @@ function displayRandomText() {
         paragraphsContainer.appendChild(p);
     });
 }
-
 window.onload = displayRandomText;

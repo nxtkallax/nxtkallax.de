@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden; /* Verhindert Scrollen des Body */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,13 +22,13 @@ body {
 .scroll-container {
     width: 100%;
     height: 100%;
-    overflow-y: scroll; /* Ermöglicht Scrollen innerhalb des Containers */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .scroll-container::-webkit-scrollbar {
-    display: none; /* Versteckt die Scrollbar in Webkit-Browsern (Chrome, Safari) */
+    display: none;
 }
 
 .container {
@@ -37,8 +37,8 @@ body {
     align-items: center;
     width: 80%;
     max-width: 800px;
-    margin: auto; /* Zentriert den Container */
-    padding: 20px; /* Abstand innerhalb des Containers */
+    margin: auto;
+    padding: 20px;
 }  
 
 h1 {
@@ -48,8 +48,8 @@ h1 {
 
 .bottom-left-link {
     position: absolute;
-    bottom: 10px; /* Abstand vom unteren Rand */
-    left: 10px; /* Abstand vom linken Rand */
+    bottom: 10px;
+    left: 10px;
     font-size: 16px;
     text-decoration: none;
     color: #f5f5f5;
@@ -60,15 +60,15 @@ h1 {
 .hover-text {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, linear; /* Weiche Überblendung */
+    transition: visibility 0s, linear;
     position: absolute;
     left: 0;
-    bottom: 25px; /* Abstand vom Link */
-    background-color: #fff; /* Hintergrundfarbe */
+    bottom: 25px;
+    background-color: #fff;
     padding: 5px;
     z-index: 1;
 }
-/* Zeigt den zusätzlichen Text beim Hover an */
+
 .bottom-left-link:hover .hover-text {
     visibility: visible;
     opacity: 1;

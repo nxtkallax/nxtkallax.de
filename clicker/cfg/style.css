@@ -1,7 +1,12 @@
+@font-face {
+    font-family: nunitobold;
+    src: url(/cfg/font/Nunito-Bold.ttf);
+  }
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Standard-Schriftart für den Rest der Seite */
+    font-family: nunitobold, sans-serif; /* Standard-Schriftart für den Rest der Seite */
 }
 
 .clickbutton {
@@ -35,7 +40,7 @@ body {
     top: 20px; /* Abstand vom oberen Rand */
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Courier New', Courier, monospace; /* Spezielle Schriftart für den Click Counter */
+    font-family: nunitobold; /* Spezielle Schriftart für den Click Counter */
     font-size: 24px; /* Schriftgröße des Click Counters */
     color: #333; /* Textfarbe */
 }

@@ -3,7 +3,6 @@ var bilder = [
     "/dreck/img/bocchi.jpg",
     "/dreck/img/chiyo.jpg",
     "/dreck/img/fish.jpg",
-    "/dreck/img/hot.jpg",
     "/dreck/img/logo.png",
     "/dreck/img/meme.jpg",
     "/dreck/img/osaker.jpg",
