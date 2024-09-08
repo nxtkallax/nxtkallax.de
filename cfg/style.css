@@ -17,6 +17,13 @@ body {
     align-items: center;
     font-size: 20px;
     text-align: center;
+    
+    background-image: url(/img/gratis-geld.png);
+    background-size: 494px 498px;
+    background-repeat: repeat;
+    background-position: left center;
+    animation: bodyimg 18s linear infinite; /* Beide Animationen in einer Schleife */
+    /*danke an einfachniemmand*/
 }
 
 .scroll-container {
