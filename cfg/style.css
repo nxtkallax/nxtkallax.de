@@ -33,6 +33,19 @@ body {
     animation: bodyimg 18s linear infinite; /* Beide Animationen in einer Schleife */
     /*danke an einfachniemmand*/
 }
+@keyframes bodyimg {
+        0% { background-position: 0px 0px; }
+        10% { background-position: 494px 498px;}
+        20% { background-position: 494px -498px;}
+        30% { background-position: 494px 498px;}
+        40% { background-position: -494px -498px;}
+        50% { background-position: -494px 498px;}
+        60% { background-position: 1094px 98px;}
+        70% { background-position: 324px 198px;}
+        80% { background-position: 494pxpx 498px;}
+        90% { background-position: -594px -498px;}
+        100% { background-position: 0px 0px;}
+    }
 
 .scroll-container::-webkit-scrollbar {
     display: none;
